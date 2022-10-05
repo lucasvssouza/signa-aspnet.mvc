@@ -1,6 +1,7 @@
-Bem vindo ao meu Projeto de Teste em ASP.NET MVC
+## Bem vindo ao meu Projeto de Teste em ASP.NET MVC
+Este projeto foi realizado com o intuito de testar as minha habilidades para a vaga de Desenvolvedor Júnior FullStack na empresa Signa
 
-## Pacotes Utilizados
+### Pacotes Utilizados
  - Microsoft.EntityFrameworkCore
  - Microsoft.EntityFrameworkCore.Design
  - Microsoft.EntityFrameworkCore.Tools
@@ -9,7 +10,7 @@ Bem vindo ao meu Projeto de Teste em ASP.NET MVC
  - Pomelo.EntityFrameworkCore.MySql
  - Swashbuckle.AspNetCore
  
-## Recursos Utilizados
+### Recursos Utilizados
 - Bootstrap
 - MySQL
 - HTML 5
