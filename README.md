@@ -16,3 +16,6 @@ Este projeto foi realizado com o intuito de testar as minha habilidades para a v
 - HTML 5
 - CSS 3
 - C#
+
+### Sobre o Migrations
+O migrations foi salvo como ``DBMigration``
