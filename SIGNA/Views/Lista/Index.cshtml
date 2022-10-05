@@ -1,0 +1,33 @@
+﻿@model IEnumerable<SIGNA.Models.DataModel>
+
+@{
+    ViewData["Title"] = "Consulta de Nome Fantasia";
+}
+<div class="text-center">
+    <h1 class="display-6">Consulta de Nome Fantasia</h1>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Nome Fantasia</th>
+                <th scope="col">Detalhes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="pt-3">
+                        @Html.DisplayFor(modelItem => item.NOME_FANTASIA)
+                    </td>
+                    <td>
+                        <a role="button" class="btn btn-outline-light" asp-action="Edit" asp-route-id="@item.PESSOA_ID">Detalhe</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="d-flex flex-row justify-content-center mt-1">
+        <a role="button" class="btn btn-dark me-3" asp-controller="Home" asp-action="Index">LIMPAR LISTA</a>
+        <a role="button" class="btn btn-dark ms-3" asp-controller="Lista" asp-action="Index">MONTAR LISTA</a>
+    </div>
+</div>

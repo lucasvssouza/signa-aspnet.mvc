@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SIGNA</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SIGNA.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div style="min-height: 100%;
+	position: relative;">
+        <header>
+            <nav class="navbar navbar-dark bg-dark border-bottom box-shadow mb-3">
+                <div class="d-flex align-items-center">
+                    <img style="height: 50px; margin-right: 20px; margin-left: 20px;" src="~/img/logo.png" />
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><h1 class="display-5">SIGNA</h1></a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container" style="padding-bottom: 70px!important;">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="footer mt-auto bg-dark text-light text-center">
+            <div class="container">
+                &copy; 2022 - SIGNA
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</html>

@@ -1,0 +1,45 @@
+﻿@model SIGNA.Models.DataModel
+
+@{
+    ViewData["Title"] = "Edição de Fantasia";
+}
+<div class="d-flex flex-column align-items-center">
+    <h1 class="display-6">Detalhe de Fantasia</h1>
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="hidden" asp-for="PESSOA_ID" />
+                <div class="pb-3">
+                    <label asp-for="CNPJ_CPF" class="control-label">CNPJ/CPF</label>
+                    <input disabled asp-for="PESSOA_ID" class="form-control text-secondary" />
+                    <span asp-validation-for="CNPJ_CPF" class="text-danger"></span>
+                </div>
+
+                <div class="pb-3">
+                    <label asp-for="NOME_FANTASIA" class="control-label pb-1">Nome Fantasia</label>
+                    <input placeholder="Digite o Nome Fantasia que deseja salvar..." asp-for="NOME_FANTASIA" class="form-control text-dark" />
+                    <span asp-validation-for="NOME_FANTASIA" class="text-danger"></span>
+                </div>
+
+                <div class="pb-3">
+                    <label asp-for="CNPJ_CPF" class="control-label pb-1">CNPJ/CPF</label>
+                    <input disabled asp-for="CNPJ_CPF" class="form-control text-secondary" />
+                    <span asp-validation-for="CNPJ_CPF" class="text-danger"></span>
+                </div>
+
+            </div>
+            <input type="hidden" asp-for="CNPJ_CPF" class="form-control pb-1" />
+            <div class="d-flex flex-row justify-content-end mt-3">
+                <a role="button" class="btn btn-secundary btn-dark me-3" asp-action="Index">Voltar</a>
+                <input type="submit" value="Guardar" class="btn btn-primary btn-dark ms-3" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
