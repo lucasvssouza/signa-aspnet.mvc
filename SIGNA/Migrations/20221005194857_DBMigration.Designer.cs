@@ -10,8 +10,8 @@ using SIGNA.Models;
 namespace SIGNA.Migrations
 {
     [DbContext(typeof(PessoaContext))]
-    [Migration("20221005181447_CreateMigration")]
-    partial class CreateMigration
+    [Migration("20221005194857_DBMigration")]
+    partial class DBMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

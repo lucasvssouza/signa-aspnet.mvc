@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SIGNA.Migrations
 {
-    public partial class CreateMigration : Migration
+    public partial class DBMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
